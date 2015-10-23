@@ -140,7 +140,7 @@ if(APPLE)
     COMMAND echo ""
     COMMAND echo 'WARNING: Configuring kernel to break/debug (BE CAREFUL)...'
     COMMAND echo "WARNING: nvram boot-args=\"kext-dev-mode=1 kcsuffix=kernel -v pmuflags=1\""
-    COMMAND sudo nvram boot-args="kext-dev-mode=1 kcsuffix=kernel -v pmuflags=1"
+    COMMAND sudo nvram boot-args='kext-dev-mode=1 kcsuffix=kernel -v pmuflags=1'
     COMMAND echo "WARNING: Reboot required."
     COMMAND echo ""
     WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
